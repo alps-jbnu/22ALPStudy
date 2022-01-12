@@ -27,6 +27,9 @@ int bfs(){
         }
     }
 
+    // 토마토가 다 익지 않고, q가 차있으면
+    // q가 비어있는 상태 -> 아예 불가능한 상태로 해석 가능
+    // 모든 토마토가 다 익었다면 q에 1개 이상의 원소 존재
     while(yetCnt > 0 && !q.empty()){
         int qsize = q.size();
         while(qsize--){
