@@ -11,8 +11,15 @@ int main()
 
     int N;
     string s;
+    int res69=0;
+    int res=0;
+    int value69=0;
+    int value=0;
+    int result;
+
     cin>>N;
     s = to_string(N);
+
     for(int i = 0;i<s.size();++i)
     {
         switch(s[i])
@@ -50,5 +57,54 @@ int main()
         }
     }
 
-    
+    for(int i = 0;i<10;++i)
+    {
+        if(i != 6 && i!= 9 && arr[i] > res)
+        {
+            res = arr[i];
+            value = i;
+        }
+    }
+
+    if(arr[6] > arr[9])
+    {
+        res69 = arr[6];
+        value69 = 6;
+    }
+    else
+    {
+        res69 = arr[9];
+        value69 = 9;
+    }
+
+    if(res > res69)
+    {
+        result = res;
+    }
+    else
+    {
+        if(value69 == 6)
+        {
+            result = arr[9];
+            result = result + ceil((arr[6]-arr[9])/2.0);
+            if(result < res)
+            {
+                result = arr[6];
+            }
+        }
+        else
+        {
+            result = arr[6];
+            result = result + ceil((arr[9]-arr[6])/2.0);
+            if(result < res)
+            {
+                result = arr[9];
+            }
+        }
+    }
+
+    cout<<result<<"\n";
+
+
+
 }
