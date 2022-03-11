@@ -1,6 +1,18 @@
 
 # 공부 로그
 
+* 문제 제목에 걸린 링크는, 본인이 따로 분석한 [블로그 글 링크](https://velog.io/@copyrat90).
+* **굵게 표시된 문제**는 헷갈렸거나 오래 걸렸거나 못 푼 문제, **다시 봐야 함.**
+
+## 1주차 숙제
+
+해시 백준 문제풀이
+
+1. 4358번: 생태학(8분), [1351번: 무한 수열(11분)](https://velog.io/@copyrat90/BOJ-1351), **1253번: 좋다(35분)**
+    + 1253번: [이진 탐색(본인 풀이)](https://www.acmicpc.net/source/40264096) or [투 포인터](https://astrid-dm.tistory.com/m/470) or [해시맵](https://jaimemin.tistory.com/1297)
+2. 
+3. 
+
 ## 1주차 스터디 모임 (2022-03-10)
 
 제한시간 1시간 내에 [프로그래머스 해시](https://programmers.co.kr/learn/courses/30/parts/12077) 4문제 풀기
