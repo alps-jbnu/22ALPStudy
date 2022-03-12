@@ -10,7 +10,7 @@
 
 1. 4358번: 생태학(8분), [1351번: 무한 수열(11분)](https://velog.io/@copyrat90/BOJ-1351), **1253번: 좋다(35분)**
     + 1253번: [이진 탐색(본인 풀이)](https://www.acmicpc.net/source/40264096) or [투 포인터](https://astrid-dm.tistory.com/m/470) or [해시맵](https://jaimemin.tistory.com/1297)
-2. 
+2. 2002번: 추월(17분), 19583번: 싸이버개강총회(15분), **[2866번: 문자열 잘라내기(실패)](https://velog.io/@copyrat90/BOJ-2866)**
 3. 
 
 ## 1주차 스터디 모임 (2022-03-10)
