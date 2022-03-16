@@ -1,18 +1,29 @@
-#include<stdio.h>
+#include<iostream>
+#include<algorithm> 
+using namespace std;
 
-int main() 
+int main(void)
 {
-	int a, b, c, num, arr[10] = { 0 }, result = 0;
-	scanf("%d %d %d", &a, &b, &c);
-	result = a * b * c;
+    int n, num = 0;
+    cin >> n;
 
-	while (result > 0) {
-		num = result % 10;
-		arr[num]++;
-		result = result / 10;
-	}
+    int arr[10] = { 0, };
 
-	for (int i = 0; i < 10; i++) {
-		printf("%d\n", arr[i]);
-	}
+    while (true)
+    {
+        arr[n % 10]++;
+        if (n / 10 == 0) break;
+        n /= 10;
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (i != 9 && i != 6)
+        {
+            num = max(num, arr[i]);
+        }
+    }
+
+    cout << max(num, (arr[6] + arr[9] + 1) / 2);
+    return 0;
 }
