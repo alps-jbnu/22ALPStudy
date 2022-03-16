@@ -15,10 +15,11 @@
 ## 스터디 방식
 
 크게 3가지 활동이 있다.
-1. 일주일 동안 대회 기출문제를 풀고,
+1. 일주일 동안 각종 대회(e.g., USACO)의 기출문제를 풀고 일주일에 한 번씩 모여서 각자의 풀이 과정을 공유한다.
+2. 일주일에 한 번씩 모여 1시간 동안 적절한 난이도의 문제를 풀고, 끝난 후 각자의 풀이 과정을 공유한다.
+3. 기타 일주일 동안 개인적으로 공부했던 내용을 공유한다.
 
 # 스케쥴
-
 
 |  | 주제 |
 | :--: | :--: |
@@ -32,27 +33,3 @@
 | (2022.05.30 ~ 2022.06.05) | [Heap](https://blog.encrypted.gg/1015?category=773649) |
 | (2022.06.06 ~ 2022.06.21) | 시험 기간 |
 | (2022.06.27~) | [Hash](https://blog.encrypted.gg/1009?category=773649) |
-
-
-
-# 문제집
-
-
-| 번호 | 주제 |
-| :--: | :--: |
-| 00 | 오리엔테이션 (문제집 X) |
-| 01 | 기초 코드 작성 요령 I (문제집 X) |
-| 02 | [기초 코드 작성 요령 II](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md) |
-| 03 | [array](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md) |
-| 04 | [linked list](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md) |
-| 05 | [stack](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md) |
-| 06 | [queue](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md) |
-| 07 | [deque](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md) |
-| 08 | [BFS](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md) |
-| 09 | DFS (문제집 X) |
-| 10 | [그래프](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x18.md) |
-| 11 | [recursive](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md) |
-| 12 | [트리](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x19.md) |
-| 13 | [BST](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x16.md) |
-| 15 | [우선순위 큐(heap)](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x17.md) |
-| 16 | [해시](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x15.md) |
