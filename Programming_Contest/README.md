@@ -28,5 +28,5 @@
 |  | 주제 |
 | -- | -- |
 | 2022.03.08 | OT |
-| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105 팔](https://www.acmicpc.net/problem/1105), [BOJ 1025 제곱수 찾기](https://www.acmicpc.net/problem/1025) 3.  |
+| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105 팔](https://www.acmicpc.net/problem/1105), [BOJ 1025 제곱수 찾기](https://www.acmicpc.net/problem/1025) </br> 3. [기타 개인 공부 내용]( |
 | 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) |
