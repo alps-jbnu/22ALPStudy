@@ -42,6 +42,7 @@
             <li><a href=https://www.acmicpc.net/problem/5021>왕위 계승</a></li>
             <li><a href=https://www.acmicpc.net/problem/22252>정보 상인 호석</a></li>
             <li><a href=https://www.acmicpc.net/problem/22860>폴더 정리(small)</a></li>
+            <li><a href=https://www.acmicpc.net/problem/22861>폴더 정리(large)</a></li>
         </ul>
     </div>
 </details>
