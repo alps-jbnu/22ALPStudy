@@ -41,6 +41,7 @@
             <li><a href=https://www.acmicpc.net/problem/20166>문자열 지옥에 빠진 호석</a></li>
             <li><a href=https://www.acmicpc.net/problem/5021>왕위 계승</a></li>
             <li><a href=https://www.acmicpc.net/problem/22252>정보 상인 호석</a></li>
+            <li><a href=https://www.acmicpc.net/problem/22860>폴더 정리(small)</a></li>
         </ul>
     </div>
 </details>
