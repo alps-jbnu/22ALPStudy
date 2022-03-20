@@ -22,7 +22,7 @@
    2. 이 과정에서 서로 '이런 방식으로 하는건 어떤가요?', '왜 그렇게 하면 성립하나요?' 등 질문을 통해 더욱 성장
    3. 1주일에 3명씩 돌아가면서 자신이 어려웠던 부분 말해보기
 3. 조금(많이) 어려운 문제도 풀어보는 연습 해보기
-4. 풀이 중 설명할만한 부분 정리해두기 [예시1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [예시2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [예시3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md)
+4. 풀이 중 설명할만한 부분 정리해두기 (예시 [1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md))
 5. 풀이 중 궁금한 점이 생기면 [Issues](https://github.com/alps-jbnu/22ALPStudy/issues)에 등록
 
 ## 매니저
