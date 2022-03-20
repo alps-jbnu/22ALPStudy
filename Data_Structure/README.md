@@ -22,7 +22,7 @@
    2. 이 과정에서 서로 '이런 방식으로 하는건 어떤가요?', '왜 그렇게 하면 성립하나요?' 등 질문을 통해 더욱 성장
    3. 1주일에 3명씩 돌아가면서 자신이 어려웠던 부분 말해보기
 3. 조금 어려운(어쩌면 많이) 문제도 풀어보는 연습 해보기
-4. 풀이 중 궁금한 점이 생기면 [Issues](https://github.com/Sabro98/22ALPStudy/issues)에 등록
+4. 풀이 중 궁금한 점이 생기면 [Issues](https://github.com/alps-jbnu/22ALPStudy/issues)에 등록
 
 ## 매니저
 
