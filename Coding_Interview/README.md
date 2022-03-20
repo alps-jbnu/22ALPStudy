@@ -20,7 +20,7 @@
 2. 본인 풀이가 왜 정당한지, 문제를 왜 그렇게 접근했는지 등을 발표하기
    1. 나의 풀이를 설명하는 발표하는 연습을 해보기, 머리속으로 아는것과 말하는것은 완전히 다르다
 3. 코딩테스트 연습 중 연습이 더 필요한 주제들은 백준에서 풀이 진행 -> 평균보다 조금 어려운 문제들 위주로
-4. 풀이 중 설명할만한 부분 정리해두기 [예시1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [예시2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [예시3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md)
+4. 풀이 중 설명할만한 부분 정리해두기 (예시 [1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md))
 5. 대표적인 코테(카카오, 네이버 등)의 방식을 참고한 문제 set를 만들고 지정된 시간내에 테스트 진행.
 
 ## 매니저
