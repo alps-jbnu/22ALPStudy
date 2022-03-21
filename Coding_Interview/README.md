@@ -25,11 +25,11 @@
 
 ## 매니저
 
-[최인혁](https://github.com/Sabro98)
+[최인혁](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/Sabro98)
 
 ## 멤버
 
-[강태양](https://github.com/GangSSun), [유구연](https://github.com/copyrat90), [허지현](https://github.com/qhur135)
+[강태양](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/GangSSun), [유구연](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/copyrat90), [허지현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/qhur135)
 
 ## 스케쥴
 

@@ -27,13 +27,13 @@
 
 ## 매니저
 
-[정예성](https://github.com/jys-jeong), [이정현](https://github.com/AFpine)  
-[소부승](https://github.com/bootkorea), [곽성대](https://github.com/tjdeo1102)
+[정예성](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/jys-jeong), [이정현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/AFpine)  
+[소부승](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/bootkorea), [곽성대](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/Santam)
 
 ## 멤버
 
-[강봉구](https://github.com/rkdbq), [신승헌](https://github.com/tlstmdgjs), [박현주](https://github.com/Zoe305), [최아영](https://github.com/IMAYOUNG)  
-[김지성](https://github.com/zs0057), [편지승](https://github.com/vuswltmd), [황지찬](https://github.com/JC-arl)
+[강봉구](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/rkdbq), [신승헌](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/tlstmdgjs), [박현주](https://github.com/Zoe305), [최아영](https://github.com/IMAYOUNG)  
+[김지성](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/zs0057), [편지승](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/vuswltmd), [황지찬](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/JC-arl)
 
 # 스케쥴
 
