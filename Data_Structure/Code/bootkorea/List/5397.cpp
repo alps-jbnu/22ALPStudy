@@ -11,7 +11,7 @@ stack<char> st1, temp;
 int main()
 {
 	cin >> n;
-	
+
 
 	for (int i = 0; i < n; i++)
 	{
@@ -58,7 +58,7 @@ int main()
 			st1.pop();
 		}
 		reverse(result.begin(), result.end());
-		
+
 		cout << result << "\n";
 	}
 	return 0;
