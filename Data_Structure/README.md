@@ -32,7 +32,7 @@
 
 ## 멤버
 
-[강봉구](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/rkdbq), [신승헌](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/tlstmdgjs), [박현주](https://github.com/Zoe305), [최아영](https://github.com/IMAYOUNG)  
+[강봉구](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/rkdbq), [신승헌](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/tlstmdgjs), [박현주](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/Zoe305), [최아영](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/IMAYOUNG)  
 [김지성](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/zs0057), [편지승](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/vuswltmd), [황지찬](https://github.com/alps-jbnu/22ALPStudy/tree/master/Data_Structure/Code/JC-arl)
 
 # 스케쥴
