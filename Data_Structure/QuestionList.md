@@ -1,1 +1,1 @@
-- 3273, occur 배열의 용도 [link](https://github.com/Sabro98/22ALPStudy/issues/47)
+- 3273, occur 배열의 용도 [link](https://github.com/alps-jbnu/22ALPStudy/issues/47)
