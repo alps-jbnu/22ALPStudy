@@ -1,62 +1,32 @@
 ## 개요
 
-자료구조를 미리 공부해서 알고리즘을 빠르게 대비하자
+- ICPC, SCPC, 구글 코드잼 등의 프로그래밍 대회를 준비한다.
+- 적절한 난이도의 Ad-hoc 문제들을 풀며 컴퓨팅적 사고를 함양한다.
 
 ## 대상
 
-2학년 1학기 학생들
+1. 3학년 1학기 학생들.
+2. 어려운 알고리즘 문제를 풀고자 하는 학생들.
 
 ## 목표
 
-웬만한 학생들보다 빠르게 공부해서 실력을 빠르게 쌓자
+프로그래밍 대회 입상.
+
+## 현재 멤버
+
+정동원, 신명수, 정우경, 최우석
 
 ## 스터디 방식
 
-[바킹독](https://blog.encrypted.gg/) 알고리즘 강의로 스터디 진행
-
-1. 1주일동안 주어진 주제에 대해 영상 + 문제 풀이
-2. 스터디 시간에는 어려운 (또는 까다로웠던) 문제에 대해 접근, 아이디어 등을 설명해보기
-    1. 직접 설명하는것은 차원이 다르다
-    2. 이 과정에서 서로 '이런 방식으로 하는건 어떤가요?', '왜 그렇게 하면 성립하나요?' 등 질문을 통해 더욱 성장
-3. 조금 어려운(어쩌면 많이) 문제도 풀어보는 연습 해보기
-4. 풀이 중 궁금한 점이 생기면 [Issues](https://github.com/Sabro98/22ALPStudy/issues)에 등록
+크게 3가지 활동이 있다.
+1. 일주일 동안 각종 대회(e.g., USACO)의 기출문제를 풀고 일주일에 한 번씩 모여서 각자의 풀이 과정을 공유한다.
+2. 일주일에 한 번씩 모여 1시간 동안 적절한 난이도의 문제를 풀고, 끝난 후 각자의 풀이 과정을 공유한다.
+3. 기타 일주일 동안 개인적으로 공부했던 내용을 공유한다.
 
 # 스케쥴
 
-
-|  | 주제 |
-| :--: | :--: |
-| (2022.02.28 ~ 2022.03.06) | [OT](https://blog.encrypted.gg/921?category=773649) / [기초 작성 요령 1](https://blog.encrypted.gg/922?category=773649) / [기초 코드 작성 요령 2](https://blog.encrypted.gg/923?category=773649)  |
-| (2022.03.07 ~ 2022.03.13) | [Array](https://blog.encrypted.gg/927?category=773649) / [Linked List](https://blog.encrypted.gg/932?category=773649) |
-| (2022.03.14 ~ 2022.03.20) | [Stack](https://blog.encrypted.gg/933?category=773649) / [Queue](https://blog.encrypted.gg/934?category=773649) / [Deque](https://blog.encrypted.gg/935?category=773649) |
-| (2022.03.21 ~ 2022.04.03) | [Graph](https://blog.encrypted.gg/1016?category=773649) / [DFS](https://blog.encrypted.gg/942?category=773649) / [BFS](https://blog.encrypted.gg/941?category=773649) |
-| (2022.04.04 ~ 2022.04.10) | [Recursion](https://blog.encrypted.gg/943?category=773649) |
-| (2022.04.11 ~ 2022.05.01) | 시험 기간 |
-| (2022.05.02 ~ 2022.05.15) | [Tree](https://blog.encrypted.gg/1019?category=773649) / [BST](https://blog.encrypted.gg/1013?category=773649) |
-| (2022.05.30 ~ 2022.06.05) | [Heap](https://blog.encrypted.gg/1015?category=773649) |
-| (2022.06.06 ~ 2022.06.21) | 시험 기간 |
-| (2022.06.27~) | [Hash](https://blog.encrypted.gg/1009?category=773649) |
-
-
-
-# 문제집
-
-
-| 번호 | 주제 |
-| :--: | :--: |
-| 00 | 오리엔테이션 (문제집 X) |
-| 01 | 기초 코드 작성 요령 I (문제집 X) |
-| 02 | [기초 코드 작성 요령 II](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md) |
-| 03 | [array](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md) |
-| 04 | [linked list](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md) |
-| 05 | [stack](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md) |
-| 06 | [queue](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md) |
-| 07 | [deque](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md) |
-| 08 | [BFS](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md) |
-| 09 | DFS (문제집 X) |
-| 10 | [그래프](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x18.md) |
-| 11 | [recursive](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md) |
-| 12 | [트리](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x19.md) |
-| 13 | [BST](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x16.md) |
-| 15 | [우선순위 큐(heap)](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x17.md) |
-| 16 | [해시](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x15.md) |
+|  | 주제 | 공부 내용
+| -- | -- | -- |
+| 2022.03.08 | OT |  |
+| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105 팔](https://www.acmicpc.net/problem/1105), [BOJ 1025 제곱수 찾기](https://www.acmicpc.net/problem/1025) </br> 3. [기타 개인 공부](https://github.com/Sabro98/22ALPStudy/tree/master/Programming_Contest/2022.03.09%20~%202022.03.15/3.%20%EA%B8%B0%ED%83%80%20%EA%B0%9C%EC%9D%B8%20%EA%B3%B5%EB%B6%80%20%EB%82%B4%EC%9A%A9) | [링크](https://github.com/Sabro98/22ALPStudy/tree/master/Programming_Contest/2022.03.09%20~%202022.03.15) |
+| 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) | |
