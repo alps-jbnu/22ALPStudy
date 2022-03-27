@@ -30,7 +30,7 @@
 
 ## 멤버
 
-[강태양](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/GangSSun), [유구연](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/copyrat90), [허지현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/qhur135)
+[유구연](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/copyrat90), [허지현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/qhur135)
 
 ## 스케쥴
 
