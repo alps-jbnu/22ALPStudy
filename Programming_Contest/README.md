@@ -28,6 +28,6 @@
 |  | 주제 |
 | -- | -- |
 | 2022.03.08 | OT |
-| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105](https://www.acmicpc.net/problem/1105), [1025](https://www.acmicpc.net/problem/1025) </br> 3. 기타 개인 공부 | 
-| 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) </br> 2. [BOJ 15888](https://boj.kr/15888), [18866](https://boj.kr/18866) </br> 3. 기타 개인 공부 |
+| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105](https://www.acmicpc.net/problem/1105), [1025](https://www.acmicpc.net/problem/1025) | 
+| 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) </br> 2. [BOJ 15888](https://boj.kr/15888), [18866](https://boj.kr/18866) |
 | 2022.03.23 ~ 2022.03.29 | 1. [USACO 2022 January Contest Bronze & Silver](https://www.acmicpc.net/category/645) </br> 2. [BOJ 5389](https://boj.kr/5389), [14217](https://boj.kr/14217) |
