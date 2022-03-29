@@ -16,9 +16,10 @@
 
 **매주 목요일 19~21시 진행**
 
-1. 문제셋: [백준 코테 대비 문제집](https://www.acmicpc.net/workbook/view/4357), [프로그래머스 코딩테스트 연습 페이지](https://programmers.co.kr/learn/challenges)
+1. 문제셋: [백준 코테 대비 문제집](https://www.acmicpc.net/workbook/view/4357), [프로그래머스 코딩테스트 연습 페이지](https://programmers.co.kr/learn/challenges), [코딩테스트 문제집 Github](https://github.com/tony9402/baekjoon)
 2. 본인 풀이가 왜 정당한지, 문제를 왜 그렇게 접근했는지 등을 발표하기
    1. 나의 풀이를 설명하는 발표하는 연습을 해보기, 머리속으로 아는것과 말하는것은 완전히 다르다
+   2. 설명 시 나의 풀이가 **왜 정당한지, 더 효율적인 방법은 없는지**를 포함해서 설명
 3. 코딩테스트 연습 중 연습이 더 필요한 주제들은 백준에서 풀이 진행 -> 평균보다 조금 어려운 문제들 위주로
 4. 풀이 중 설명할만한 부분 정리해두기 (예시 [1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md))
 5. 대표적인 코테(카카오, 네이버 등)의 방식을 참고한 문제 set를 만들고 지정된 시간내에 테스트 진행.
@@ -29,16 +30,26 @@
 
 ## 멤버
 
-[강태양](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/GangSSun), [유구연](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/copyrat90), [허지현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/qhur135)
+[유구연](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/copyrat90), [허지현](https://github.com/alps-jbnu/22ALPStudy/tree/master/Coding_Interview/Code/qhur135)
 
 ## 스케쥴
 
-|                         |     주제     |
-| :---------------------: | :----------: |
-| 2022.03.10 ~ 2022.03.16 |     Hash     |
-| 2022.03.17 ~ 2022.03.23 | Queue, Stack |
+**체크 표시**가 된 문제들은 필수로 풀어오기!!  
+나머지 문제들은 선택적으로 풀이, 필요하다면 같이 풀어보자고 요청
+
+|        |                                       주제                                        |
+| :----: | :-------------------------------------------------------------------------------: |
+| Week 1 |                                       Hash                                        |
+| Week 2 |                                   Queue, Stack                                    |
+| Week 3 | [Data Structure1](https://github.com/tony9402/baekjoon/tree/main/data_structure)  |
+| Week 4 | [Data Structure2](https://github.com/tony9402/baekjoon/tree/main/data_structure2) |
+| Week 5 |            [Tree](https://github.com/tony9402/baekjoon/blob/main/tree)            |
+| Week 6 |            [Math](https://github.com/tony9402/baekjoon/tree/main/math)            |
+| Week 7 |          [Greedy](https://github.com/tony9402/baekjoon/tree/main/greedy)          |
 
 ## Problems
+
+220327. 문제 선정(스타일, 난이도)의 애매함 때문에 [이곳](https://github.com/tony9402/baekjoon)에 나와있는 문제를 사용할 예정
 
 <details open>   
  <summary>Queue/Stack</summary>
