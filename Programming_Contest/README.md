@@ -14,7 +14,10 @@
 
 ## 현재 멤버
 
-정동원, 신명수, 정우경, 최우석
+[정동원](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EB%8F%99%EC%9B%90), 
+[신명수](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%8B%A0%EB%AA%85%EC%88%98), 
+[정우경](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EC%9A%B0%EA%B2%BD), 
+[최우석](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%B5%9C%EC%9A%B0%EC%84%9D)
 
 ## 스터디 방식
 
