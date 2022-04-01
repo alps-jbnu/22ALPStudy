@@ -38,15 +38,15 @@
 **체크 표시**가 된 문제들은 필수로 풀어오기!!  
 나머지 문제들은 선택적으로 풀이, 필요하다면 같이 풀어보자고 요청
 
-|        |                                       주제                                        |
-| :----: | :-------------------------------------------------------------------------------: |
-| Week 1 |                                       Hash                                        |
-| Week 2 |                                   Queue, Stack                                    |
-| Week 3 | [Data Structure1](https://github.com/tony9402/baekjoon/tree/main/data_structure)  |
-| Week 4 | [Data Structure2](https://github.com/tony9402/baekjoon/tree/main/data_structure2) |
-| Week 5 |            [Tree](https://github.com/tony9402/baekjoon/blob/main/tree)            |
-| Week 6 |            [Math](https://github.com/tony9402/baekjoon/tree/main/math)            |
-| Week 7 |          [Greedy](https://github.com/tony9402/baekjoon/tree/main/greedy)          |
+|        |                                       주제                                        |이슈|
+| :----: | :-------------------------------------------------------------------------------: |:----:|
+| Week 1 |                                       Hash                                        ||
+| Week 2 |                                   Queue, Stack                                    ||
+| Week 3 | [Data Structure1](https://github.com/tony9402/baekjoon/tree/main/data_structure)  |[link](https://github.com/alps-jbnu/22ALPStudy/issues/115)|
+| Week 4 | [Data Structure2](https://github.com/tony9402/baekjoon/tree/main/data_structure2) ||
+| Week 5 |            [Tree](https://github.com/tony9402/baekjoon/blob/main/tree)            ||
+| Week 6 |            [Math](https://github.com/tony9402/baekjoon/tree/main/math)            ||
+| Week 7 |          [Greedy](https://github.com/tony9402/baekjoon/tree/main/greedy)          ||
 
 ## Problems
 
