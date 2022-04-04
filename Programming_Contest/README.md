@@ -14,7 +14,10 @@
 
 ## 현재 멤버
 
-정동원, 신명수, 정우경, 최우석
+[정동원](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EB%8F%99%EC%9B%90), 
+[신명수](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%8B%A0%EB%AA%85%EC%88%98), 
+[정우경](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EC%9A%B0%EA%B2%BD), 
+[최우석](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%B5%9C%EC%9A%B0%EC%84%9D)
 
 ## 스터디 방식
 
@@ -25,8 +28,9 @@
 
 # 스케쥴
 
-|  | 주제 | 공부 내용
-| -- | -- | -- |
-| 2022.03.08 | OT |  |
-| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105](https://www.acmicpc.net/problem/1105), [1025](https://www.acmicpc.net/problem/1025) </br> 3. [기타 개인 공부](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/2022.03.09%20~%202022.03.15/3.%20%EA%B8%B0%ED%83%80%20%EA%B0%9C%EC%9D%B8%20%EA%B3%B5%EB%B6%80%20%EB%82%B4%EC%9A%A9) | [링크](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/2022.03.09%20~%202022.03.15) |
-| 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) </br> 2. [BOJ 15888](https://boj.kr/15888), [18866](https://boj.kr/18866) </br> 3. [기타 개인 공부](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/2022.03.16%20~%202022.03.22/3.%20%EA%B8%B0%ED%83%80%20%EA%B0%9C%EC%9D%B8%20%EA%B3%B5%EB%B6%80%20%EB%82%B4%EC%9A%A9) | [링크](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/2022.03.16%20~%202022.03.22)|
+|  | 주제 |
+| -- | -- |
+| 2022.03.08 | OT |
+| 2022.03.09 ~ 2022.03.15 | 1. [USACO 2021 December Contest Silver](https://www.acmicpc.net/category/612) </br> 2. [BOJ 1105](https://www.acmicpc.net/problem/1105), [1025](https://www.acmicpc.net/problem/1025) | 
+| 2022.03.16 ~ 2022.03.22 | 1. [USACO 2022 February Contest Silver](https://www.acmicpc.net/category/649) </br> 2. [BOJ 15888](https://boj.kr/15888), [18866](https://boj.kr/18866) |
+| 2022.03.23 ~ 2022.03.29 | 1. [USACO 2022 January Contest Bronze & Silver](https://www.acmicpc.net/category/645) </br> 2. [BOJ 5389](https://boj.kr/5389), [14217](https://boj.kr/14217) |
