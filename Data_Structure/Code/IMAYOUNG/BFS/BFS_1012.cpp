@@ -30,7 +30,7 @@ int main() {
 			for (int j = 0; j < n; j++) {
 				if (board[i][j] == 0 || vis[i][j] == 1)continue;
 				num++;
-				queue < pair<int, int> q;
+				queue < pair<int, int>> q;
 				vis[i][j] = 1;
 				q.push({ i,j });
 
