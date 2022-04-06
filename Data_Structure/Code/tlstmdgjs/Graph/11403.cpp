@@ -1,41 +1,38 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int>adj[501];
-int vis[501];
-int n, m;
-int num;
+vector<int>adj[101];
+int vis[101];
 
-void bfs() {
-	queue<int>q;
-	q.push(1);
-	vis[1] = 1;
-	while (!q.empty()) {
-		int cur = q.front();
-		q.pop();
-
-		for (auto nxt:adj[cur]) {
-			if (vis[nxt] || vis[cur] >= 3)
-				continue;
-				q.push(nxt);
-				vis[nxt] = vis[cur]+1;
-				num++;
-			}
+void dfs(int cur) {
+	stack<int>s;
+	for (int i = 0; i < adj[cur].size(); i++) {
+		if (!vis[adj[cur][i]]) {
+			vis[adj[cur][i]] = 1;
+			dfs(adj[cur][i]);
 		}
 	}
+}
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-	cin >> n >> m;
+	int n;
+	cin >> n;
+	int p;
 	
-	for (auto i = 0; i < m; i++) {
-		int u, v;
-		cin >> u >> v;
-		adj[u].push_back(v);
-		adj[v].push_back(u);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> p;
+			if (p==1)
+				adj[i].push_back(j);
+		}
 	}
-
-	bfs();
-	cout << num;
+	for (int i = 0; i < n; i++) {
+		memset(vis, 0, sizeof(vis));
+		dfs(i);
+		for (int j = 0; j < n; j++)
+			cout << vis[j] << " ";
+		cout << "\n";
+	}
 }
