@@ -2,7 +2,7 @@
 
 N의 범위가 0 <= N <= 10,000,000 이라 큰 줄 알았지만, 이를 문자열으로 처리하면 최대 8개의 문자  
 현재 수를 curr이라 할 때 \forall n \in [0, 10] n + curr, curr + n 수행  
-수행한 문자열이 입력 문자열 안에 존재하면 재귀를 수행  (ex, if n + curr in input_string, recurssion(n + curr), end)  
+수행한 문자열이 입력 문자열 안에 존재하면 재귀를 수행  (ex, if n + curr in input_string, recursion(n + curr), end)  
 
 이 때 주의해야 할 점은 **숫자를 적는 과정에서 나온 수가 순서대로 모두 같다면 같은 방법이다.**
 현재 상태를 curr, 현재 수를 n 이라 할 때, 같은 과정은 수행하는 경우는 curr + n == n + curr 일 때 뿐이다.  
