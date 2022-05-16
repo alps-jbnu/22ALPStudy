@@ -1,39 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    bool chk[101];
-    int n, m, x, y;
-    scanf("%d %d", &n, &m);
-    vector<int> v[101];
-    for (int i = 0; i < m; i++) {
-        scanf("%d %d", &x, &y);
-        v[x].push_back(y);
-        v[y].push_back(x);
-    }
-    queue<int> q;
-    q.push(1);
-    int cnt = 0;
-    chk[1] = true;
-    // 감염된 컴퓨터 찾기
-    while (!q.empty()) {
-        int now = q.front();
-        q.pop();
-        cnt += 1;
-        for (int i = 0; i < v[now].size(); i++) {
-            int next = v[now][i];
-            if (!chk[next]) {
-                chk[next] = true;
-                q.push(next);
-            }
-        }
-    }
-    cnt -= 1; // 시작점 제외
-    printf("%d", cnt);
-    return 0;
+vector<int> a[101];
+bool check[101];
+int cnt = 0;
+
+void dfs(int x) {
+	check[x] = true;
+	for (int i = 0; i < a[x].size(); i++) {
+		int y = a[x][i];
+		if (!check[y]) {
+			dfs(y);
+			cnt++;
+		}
+	}
 }
 
-
-출처: https://intaehwang.tistory.com/19 [황인태 블로그]
+int main() {
+	ios::sync_with_stdio(0);
+    	cin.tie(0);
+	int n, m;
+	cin >> n >> m;
+	for (int i = 0; i < m; i++) {
+		int u, v;
+		cin >> u >> v;
+		a[u].push_back(v);
+		a[v].push_back(u);
+	}
+	dfs(1);
+	cout << cnt << '\n';
+}
