@@ -1,37 +1,39 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 using namespace std;
+//dfs로 해보기 
 
-vector<int> adj[1005];
-bool visit[1005];
-int main(){
-  ios::sync_with_stdio(0);
-  cin.tie(0);
-  int n, m;
+int n, m;
+vector<int> adj[1002];
+bool visited[1002];
+void dfs(int now) {
+	visited[now] = 1;
+	for (int i = 0; i < adj[now].size(); i++){
+		int next = adj[now][i];
+		if (!visited[next]) dfs(next);
+	}
+}
 
-  cin >> n >> m;  
-  while(m--){
-    int u, v;
-    cin >> u >> v;
-    adj[u].push_back(v);
-    adj[v].push_back(u);    
-  }
 
-  int num = 0;
-  for(int i = 1; i <= n; i++){
-    if(visit[i]) continue;
-    num++;
-    queue<int> q;
-    q.push(i);
-    vis[i] = true;
-    while(!q.empty()){
-      int cur = q.front();
-      q.pop();
-      for(auto nt : adj[cur]){
-        if(visit[nt]) continue;
-        q.push(nt);
-        visit[nt] = true;
-      }
-    }
-  }
-  cout << num;
+int main() {
+
+	cin >> n >> m;
+	for (int i = 0; i < m; i++) {
+		int x, y;
+		cin >> x >> y;
+		adj[x].push_back(y);
+		adj[y].push_back(x);
+	}
+	for (int j = 1; j <= n; j++) {
+		sort(adj[j].begin(), adj[j].end());
+	}
+	
+	int cnt = 0;
+	for (int k = 1; k <= n; k++) {
+		if (visited[k]) continue;
+		dfs(k);
+		cnt++;
+	}
+	cout << cnt;
 }
