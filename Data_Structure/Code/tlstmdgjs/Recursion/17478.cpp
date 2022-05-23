@@ -6,7 +6,7 @@ string Bar = "____";
 void func(int n, int c) {
 	string undBar = "";
 	int val = c - n;
-	while (val--)
+	while (val--) //0에 가까워질 수록 _가 많아짐
 		undBar += Bar;
 	cout << undBar << "\"재귀함수가 뭔가요?\"\n";
 
