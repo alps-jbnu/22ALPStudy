@@ -4,36 +4,30 @@
 using namespace std;
 //dfs로 해보기 
 
-int n, m;
-vector<int> adj[1002];
-bool visited[1002];
-void dfs(int now) {
-	visited[now] = 1;
-	for (int i = 0; i < adj[now].size(); i++){
-		int next = adj[now][i];
-		if (!visited[next]) dfs(next);
+vector<int> a[101];
+bool check[101];
+int cnt = 0;
+
+void dfs(int x) {
+	check[x] = true;
+	for (int i = 0; i < a[x].size(); i++) {
+		int y = a[x][i];
+		if (!check[y]) {
+			dfs(y);
+			cnt++;
+		}
 	}
 }
 
-
 int main() {
-
+	int n, m;
 	cin >> n >> m;
 	for (int i = 0; i < m; i++) {
-		int x, y;
-		cin >> x >> y;
-		adj[x].push_back(y);
-		adj[y].push_back(x);
+		int u, v;
+		cin >> u >> v;
+		a[u].push_back(v);
+		a[v].push_back(u);
 	}
-	for (int j = 1; j <= n; j++) {
-		sort(adj[j].begin(), adj[j].end());
-	}
-	
-	int cnt = 0;
-	for (int k = 1; k <= n; k++) {
-		if (visited[k]) continue;
-		dfs(k);
-		cnt++;
-	}
-	cout << cnt;
+	dfs(1);
+	cout << cnt << '\n';
 }
