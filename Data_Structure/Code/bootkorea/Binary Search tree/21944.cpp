@@ -5,6 +5,7 @@
 #include <cstring>
 using namespace std;
 const int MAX = 100000 + 1;
+const int INF = 987654321;
 typedef pair<int, int> pii;
 
 int N, M, cnt = 0;
@@ -84,10 +85,11 @@ int main()
 			}
 			else if (str == "recommend2")
 			{
-				int x, num = 0; cin >> x;
+				int x, num, nxtlv = INF; cin >> x;
 
 				if (x == 1)
 				{
+					num = 0;
 					for (int g = 1; g <= cnt; g++)
 					{
 						int p, l;
@@ -125,9 +127,10 @@ int main()
 			}
 			else
 			{
-				int x, L, num = 0; cin >> x >> L;
+				int x, L, nxtlv, num; cin >> x >> L;
 				if (x == 1)
 				{
+					num = INF, nxtlv = INF;
 					for (int g = 1; g <= cnt; g++)
 					{
 						int p, l;
@@ -140,16 +143,17 @@ int main()
 							HARD[g].pop();
 						}
 
-						if (HARD[g].top().second >= L)
+						if (l >= L && nxtlv >= l)
 						{
-							num = max(num, HARD[g].top().second);
+							nxtlv = l;
+							num = min(num, HARD[g].top().second);
 						}
-
 					}
 					cout << num << "\n";
 				}
 				else
 				{
+					num = 0, nxtlv = 0;
 					for (int g = 1; g <= cnt; g++)
 					{
 						int p, l;
@@ -162,7 +166,7 @@ int main()
 							EASY[g].pop();
 						}
 
-						if (EASY[g].top().second >= L)
+						if (l < L)
 						{
 							num = max(num, EASY[g].top().second);
 						}
