@@ -12,24 +12,46 @@
 
 ## 스터디 방식
 
-[바킹독](https://blog.encrypted.gg/) 알고리즘 강의로 스터디 진행
-[자료구조](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure)스터디를 끝낸 후 진행
+[바킹독](https://blog.encrypted.gg/) 알고리즘 강의로 스터디 진행   
+[자료구조 스터디](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure) 이후 과정
 
-## 작성중...
- (2) 여름방학 스터디
-  - 여름방학 간 '정렬' '그리디' '이분 탐색' '투 포인터' 학습 예정
-  - 1학기와 동일하게 https://blog.encrypted.gg/ 활용하여 학습
-  - 타지 거주하는 회원이 다수 존재하기에 대면 방식은 불가능
-  - 온라인 스터디에 대해서는 추가적인 회의 필요
- (3) 2학기 스터디
-  - https://blog.encrypted.gg/ 자료 중 학습하지 않은 내용(문자열 등) 다룰 계획
-  - 8월 중으로 '인증 자격'을 흭득한 인원을 대상으로 스터디 진행
-  - 1학기와 동일한 방식으로 스터디 진행 (주 1회 토론 / 개인의 예습 필요)
+## 주의점
+[자료구조 스터디](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure) 피드백을 반영해 분량을 나누어서 진행   
+- 개강 전까지 6개의 쉬운 부분을 끝내기
+- 개강 후는 상대적으로 어려운 부분을 진행
 
-2. 신입생 대상 [여름방학 - 2학기] 자료구조 스터디 계획
- (1) 학습 내용
-  - 기존 2학년 1학기 학습하는 내용을 일부 다룰 예정.
-  - 과도했던 범위를 줄여, 조금 더 여유롭게 학습 예정
- (2) 대상
-  - 22학번 중 정회원 인증 자격을 흭득한 인원 대상으로 진행
-  - 인증 자격을 얻지 못한 인원에 대해 제공할 스터디 내용 회의 필요
+# 스케쥴
+
+## 개강 전
+| 번호 |                                                    주제                                                    |
+| :--: | :--------------------------------------------------------------------------------------------------------: |
+|  00  |[정렬1](https://blog.encrypted.gg/955?category=773649) / [정렬2](https://blog.encrypted.gg/966?category=773649)|
+|  01  |[이분탐색](https://blog.encrypted.gg/985?category=773649) |
+|  02  |[투포인터](https://blog.encrypted.gg/1004?category=773649) |
+|  03  |[그리디](https://blog.encrypted.gg/975?category=773649) |
+|  04  |[백트래킹](https://blog.encrypted.gg/945?category=773649)|
+
+## 개강 후
+| 번호 |                                                    주제                                                    |
+| :--: | :--------------------------------------------------------------------------------------------------------: |
+|  00  |[DP](https://blog.encrypted.gg/974?category=773649)|
+|  01  |[위상 정렬](https://blog.encrypted.gg/1020?category=773649)|
+|  02  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)|
+|  03  |[플로이드 알고리즘](https://blog.encrypted.gg/1035?category=773649)|
+|  04  |[다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)|
+
+# 문제집
+
+| 번호 |                                                    주제                                                    |
+| :--: | :--------------------------------------------------------------------------------------------------------: |
+|  00  | [정렬1](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0E.md) |
+|  01  |         [정렬2](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0F.md)          |
+|  02  |      [이분탐색](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x13.md)       |
+|  03  |         [투포인터](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x14.md)          |
+|  04  |         [그리디](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x11.md)          |
+|  05  |         [백트래킹](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md)          |
+|  06  |         [DP](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x10.md)          |
+|  07  |         [위상 정렬](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1A.md)          |
+|  08  |         [최소 신장 트리](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1B.md)          |
+|  09  |         [플로이드 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1C.md)          |
+|  10  |         [다익스트라 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1D.md)          |
