@@ -1,5 +1,5 @@
 # 22ALPStudy
-## 전북대학교 알고리즘 동아리 ALPS study repo
+## ALPS study repo
 
 ### 2022-2학기
 1. [알고리즘](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-2/Algorithm)
