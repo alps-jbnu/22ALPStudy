@@ -3,6 +3,7 @@
 
 ### 2022-2학기
 1. [알고리즘](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-2/Algorithm)
+2. [ICPC 스터디](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-2/ICPC)
 
 ### 2022-1학기
 1. [자료구조](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure)
