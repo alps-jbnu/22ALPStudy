@@ -27,3 +27,27 @@
 4. 풀이 중 설명할만한 부분 정리해두기 (예시 [1](https://github.com/alps-jbnu/22ALPStudy/blob/master/Data_Structure/Code/rkdbq/README.md) [2](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/Sabro98/Hash/README.md) [3](https://github.com/alps-jbnu/22ALPStudy/blob/master/Coding_Interview/Code/copyrat90/README.md))
 5. 풀이 중 궁금한 점이 생기면 [Issues](https://github.com/alps-jbnu/22ALPStudy/issues)에 등록
 
+## 폴더 구조
+```sh
+└─Data_Structure/
+  │ README.md
+  │ QuestionList.md
+  ├─2022-1/
+  │  │  README.md
+  │  └─code/
+  │    ├─A/
+  │    │ ├─Stack/
+  │    │ │  x.cpp
+  │    │ │  ...
+  │    │ ├─ ...
+  │    │ └─Hash/
+  │    │    x.cpp
+  │    │    ...
+  │    │    
+  │    ├─B/
+  │    │ ...
+  │    └─Z/
+  │
+  └─2023-1/
+    └─ ...
+```

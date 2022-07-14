@@ -32,63 +32,18 @@ ALPS 스터디의 원활한 진행을 위한 repo
 ## 문서 구조
 ```sh
 ├─Algorithm/
-│  │ README.md
-│  │ QuestionList.md
-│  ├─2022-2/
-│  │ │  README.md
-│  │ └─code/
-│  │   ├─A/
-│  │   │ ├─Sort/
-│  │   │ │  x.cpp
-│  │   │ │  ...
-│  │   │ │  
-│  │   │ ├─ ...
-│  │   │ │
-│  │   │ └─Trie/
-│  │   │    x.cpp
-│  │   │    ...
-│  │   │
-│  │   ├─B/
-│  │   │ ├─...
-│  │   │ └─...
-│  │   │ ...
-│  │   └─Z/
-│  │     ├─...
-│  │     └─...
-│  │
-│  └─2023-1/
-│    └─ ...
-│  
+│   ...
+│
 ├─Data_Structure/
-│  │ README.md
-│  │ QuestionList.md
-│  └─2022-1/
-│  │  │  README.md
-│  │  └─code/
-│  │    ├─A/
-│  │    │ ├─Stack/
-│  │    │ │  x.cpp
-│  │    │ │  ...
-│  │    │ ├─ ...
-│  │    │ └─Hash/
-│  │    │    x.cpp
-│  │    │    ...
-│  │    │    
-│  │    ├─B/
-│  │    │ ...
-│  │    └─Z/
-│  │
-│  └─2023-1/
-│    └─ ...
-│  
+│   ...
+│
 ├─ICPC/
 │    README.md
 │
 └─Old/
    ├─Coding_Interview/
-   │   README.md
-   │ 
+   │ ...
    └─Programming_Contest/
-       README.md
+     ...
      
 ```
