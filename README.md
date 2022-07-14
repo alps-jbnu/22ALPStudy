@@ -23,9 +23,10 @@ ALPS 스터디의 원활한 진행을 위한 repo
 2. Code 폴더 내부에 자신의 이름으로 폴더를 만들기  
    ex, `Data_Structure/2022-1/Code/A/`
 3. 자신의 폴더에서 주제에 대한 폴더 만들기  
-   ex, `Data_Structure/2022-1/Code/A/stack`
-4. 주제의 폴더에 자신의 풀이 코드를 작성
-5. 작성 후 Pull Request 전송
+   ex, `Data_Structure/2022-1/Code/A/stack/`
+4. 주제의 폴더에 자신의 풀이 코드를 작성  
+   ex, `Data_Structure/2022-1/Code/A/stack/1234.cpp`
+5. 모두 작성 후 Pull Request 전송
 
 
 ## 문서 구조
