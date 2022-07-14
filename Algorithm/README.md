@@ -63,11 +63,12 @@
 ## 개강 전
 | 번호 |                                                    주제                                                    |
 | :--: | :--------------------------------------------------------------------------------------------------------: |
-|  00  |[정렬1](https://blog.encrypted.gg/955?category=773649) / [정렬2](https://blog.encrypted.gg/966?category=773649)|
-|  01  |[이분탐색](https://blog.encrypted.gg/985?category=773649) |
-|  02  |[투포인터](https://blog.encrypted.gg/1004?category=773649) |
-|  03  |[그리디](https://blog.encrypted.gg/975?category=773649) |
-|  04  |[백트래킹](https://blog.encrypted.gg/945?category=773649)|
+|  00  |[정렬1](https://blog.encrypted.gg/955?category=773649)|
+|  01  |[정렬2](https://blog.encrypted.gg/966?category=773649)|
+|  02  |[이분탐색](https://blog.encrypted.gg/985?category=773649) |
+|  03  |[투포인터](https://blog.encrypted.gg/1004?category=773649) |
+|  04  |[그리디](https://blog.encrypted.gg/975?category=773649) |
+|  05  |[백트래킹](https://blog.encrypted.gg/945?category=773649)|
 
 ## 개강 후
 | 번호 |                                                    주제                                                    |
