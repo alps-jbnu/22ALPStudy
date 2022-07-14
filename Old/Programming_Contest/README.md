@@ -8,16 +8,19 @@
 1. 3학년 1학기 학생들.
 2. 어려운 알고리즘 문제를 풀고자 하는 학생들.
 
+## 피드백
+체계적으로 구성해 [ICPC 스터디](../../ICPC/)와 하나로 진행
+
 ## 목표
 
 프로그래밍 대회 입상.
 
 ## 현재 멤버
 
-[정동원](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EB%8F%99%EC%9B%90), 
-[신명수](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%8B%A0%EB%AA%85%EC%88%98), 
-[정우경](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%A0%95%EC%9A%B0%EA%B2%BD), 
-[최우석](https://github.com/alps-jbnu/22ALPStudy/tree/master/Programming_Contest/Codes/%EC%B5%9C%EC%9A%B0%EC%84%9D)
+[정동원](./Codes/%EC%A0%95%EB%8F%99%EC%9B%90), 
+[신명수](./Codes/%EC%8B%A0%EB%AA%85%EC%88%98), 
+[정우경](./Codes/%EC%A0%95%EC%9A%B0%EA%B2%BD), 
+[최우석](./Codes/%EC%B5%9C%EC%9A%B0%EC%84%9D)
 
 ## 스터디 방식
 

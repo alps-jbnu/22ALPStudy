@@ -1,10 +1,17 @@
 ## 개요
 
-기초 알고리즘을 같이 공부하자
+기초 알고리즘을 공부하는 스터디
 
 ## 대상
 
-자료구조 스터디를 마친 2학년 학생들
+- 다음 중 하나의 조건을 만족하는 학생들
+  - [자료구조 스터디](../Data_Structure/)를 마친 후 테스트를 통과한 학생
+    - 테스트 범위는 자료구조 전체 ~ 백트래킹까지
+  - [solved.ac](https://solved.ac/)기준 P5 이상 레벨의 학생
+
+## 진행 기간
+
+2022년 여름방학 ~ 2학기 종강
 
 ## 목표
 
@@ -13,10 +20,10 @@
 ## 스터디 방식
 
 [바킹독](https://blog.encrypted.gg/) 알고리즘 강의로 스터디 진행   
-[자료구조 스터디](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure) 이후 과정
+[자료구조 스터디](../Data_Structure/) 이후 과정
 
 ## 주의점
-[자료구조 스터디](https://github.com/alps-jbnu/22ALPStudy/tree/master/2022-1/Data_Structure) 피드백을 반영해 분량을 나누어서 진행   
+스터디 주제의 분량을 나누어서 진행   
 - 개강 전까지 6개의 쉬운 부분을 끝내기
 - 개강 후는 상대적으로 어려운 부분을 진행
 
