@@ -29,7 +29,7 @@ ALPS 스터디의 원활한 진행을 위한 repo
 5. 모두 작성 후 Pull Request 전송
 
 
-## 문서 구조
+## 폴더 구조
 ```sh
 ├─Algorithm/
 │   ...
