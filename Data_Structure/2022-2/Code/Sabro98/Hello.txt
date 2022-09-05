@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(){
+	prinf("%s", "Helloooooo\n");
+	return 0;
+}
