@@ -75,7 +75,7 @@
 | :--: | :--------------------------------------------------------------------------------------------------------: |
 |  09/12 ~ 09/23  |[DP](https://blog.encrypted.gg/974?category=773649)|
 |  09/24 ~ 09/30 |[위상 정렬](https://blog.encrypted.gg/1020?category=773649)|
-|  10/01 ~ 10/07  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)|
+|  10/01 ~ 10/07  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649), [Union-Find](https://blog.naver.com/ndb796/221230967614)|
 |  10/08 ~ 10/14  |[플로이드-와샬](https://blog.encrypted.gg/1035?category=773649)|
 |  11/04 ~ 11/11  |[다익스트라](https://blog.encrypted.gg/1037?category=773649)|
 |  11/12 ~ 11/25  |[KMP](https://blog.encrypted.gg/1040?category=773649)|
