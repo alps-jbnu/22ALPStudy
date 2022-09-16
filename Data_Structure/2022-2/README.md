@@ -15,10 +15,10 @@
 |     기간      |                                                                                               주제                                                                                               |
 | :-----------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |    ~ 09/09    | [OT](https://blog.encrypted.gg/921?category=773649) / [기초 작성 요령 1](https://blog.encrypted.gg/922?category=773649) / [기초 코드 작성 요령 2](https://blog.encrypted.gg/923?category=773649) |
-| 09/10 ~ 09/16 |                                      [Array](https://blog.encrypted.gg/927?category=773649) / [Linked List](https://blog.encrypted.gg/932?category=773649)                                       |
-| 09/17 ~ 09/23 |             [Stack](https://blog.encrypted.gg/933?category=773649) / [Queue](https://blog.encrypted.gg/934?category=773649) / [Deque](https://blog.encrypted.gg/935?category=773649)             |
-| 09/24 ~ 10/07 |              [Graph](https://blog.encrypted.gg/1016?category=773649) / [DFS](https://blog.encrypted.gg/942?category=773649) / [BFS](https://blog.encrypted.gg/941?category=773649)               |  |
-| 10/08 ~ 10/28 |                                                                                            시험 기간                                                                                             |
+| 09/17 ~ 09/23 |                                      [Array](https://blog.encrypted.gg/927?category=773649) / [Linked List](https://blog.encrypted.gg/932?category=773649)                                       |
+| 09/24 ~ 09/30 |             [Stack](https://blog.encrypted.gg/933?category=773649) / [Queue](https://blog.encrypted.gg/934?category=773649) / [Deque](https://blog.encrypted.gg/935?category=773649)             |
+| 10/01 ~ 10/14 |              [Graph](https://blog.encrypted.gg/1016?category=773649) / [DFS](https://blog.encrypted.gg/942?category=773649) / [BFS](https://blog.encrypted.gg/941?category=773649)               |  |
+| 10/14 ~ 10/28 |                                                                                            시험 기간                                                                                             |
 | 10/29 ~ 11/11 |                                                                    [Recursion](https://blog.encrypted.gg/943?category=773649)                                                                    |
 | 11/12 ~ 11/25 |                                      [Tree](https://blog.encrypted.gg/1019?category=773649)         ,[BST](https://blog.encrypted.gg/1013?category=773649)                                       |
 | 11/26 ~ 12/02 |                                                                      [Heap](https://blog.encrypted.gg/1015?category=773649)                                                                      |
