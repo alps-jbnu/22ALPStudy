@@ -71,13 +71,15 @@
 |  05  |[백트래킹](https://blog.encrypted.gg/945?category=773649)|
 
 ## 개강 후
-| 번호 |                                                    주제                                                    |
+| 기간 |                                                    주제                                                    |
 | :--: | :--------------------------------------------------------------------------------------------------------: |
-|  00  |[DP](https://blog.encrypted.gg/974?category=773649)|
-|  01  |[위상 정렬](https://blog.encrypted.gg/1020?category=773649)|
-|  02  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649)|
-|  03  |[플로이드 알고리즘](https://blog.encrypted.gg/1035?category=773649)|
-|  04  |[다익스트라 알고리즘](https://blog.encrypted.gg/1037?category=773649)|
+|  09/12 ~ 09/23  |[DP](https://blog.encrypted.gg/974?category=773649)|
+|  09/24 ~ 09/30 |[위상 정렬](https://blog.encrypted.gg/1020?category=773649)|
+|  10/01 ~ 10/07  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649), [Union-Find](https://blog.naver.com/ndb796/221230967614)|
+|  10/08 ~ 10/14  |[플로이드-와샬](https://blog.encrypted.gg/1035?category=773649)|
+|  11/04 ~ 11/11  |[다익스트라](https://blog.encrypted.gg/1037?category=773649)|
+|  11/12 ~ 11/25  |[KMP](https://blog.encrypted.gg/1040?category=773649)|
+|  11/26 ~ 12/09  |[Trie](https://blog.encrypted.gg/1059?category=773649)|
 
 # 문제집
 
@@ -92,5 +94,7 @@
 |  06  |         [DP](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x10.md)          |
 |  07  |         [위상 정렬](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1A.md)          |
 |  08  |         [최소 신장 트리](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1B.md)          |
-|  09  |         [플로이드 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1C.md)          |
-|  10  |         [다익스트라 알고리즘](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1D.md)          |
+|  09  |         [플로이드](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1C.md)          |
+|  10  |         [다익스트라](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1D.md)          |
+|  11  |         [KMP](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1E.md)          |
+|  12  |         [Trie](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1F.md)          |

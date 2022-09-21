@@ -1,120 +1,85 @@
 #include <iostream>
-#include <string>
-#include <cstring>
-#include <algorithm>
-#include <cmath>
 #include <vector>
-#include <iterator>
-#include <list>
-#include <deque>
+#include <algorithm>
+#include <string>
+#include <cctype>
+#include <cmath>
 #include <queue>
-#include <stack>
-#include <utility>
 using namespace std;
-#define X first
-#define Y second
-char board[1002][1002];
-int visf[1002][1002];
-int visj[1002][1002];
 
-int dx[4] = {1, 0, -1, 0};
-int dy[4] = {0, 1,  0, -1};
+char board[1005][1005];
+int j_vis[1005][1005];
+int f_vis[1005][1005];
+int dx[4] = { 0, 1, 0, -1 };
+int dy[4] = { 1, 0, -1, 0 };
 
-int n, m;
-
-int main()
+int main(void)
 {
-	ios_base::sync_with_stdio(0);
 	cin.tie(0);
+	ios::sync_with_stdio(0);
+	
+	int R, C;
+	cin >> R >> C;
 
+	queue<pair<int, int>> JQ;
+	queue<pair<int, int>> FQ;
 
-
-	cin >> n >> m;
-
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < R; i++)
 	{
-		for (int j = 0; j < m; j++)
-		{
-			visf[i][j] = -1;
-			visj[i][j] = -1;
-		}
-		
-	}
-
-	queue<pair<int, int>> Qj;
-	queue<pair<int, int>> Qf;
-
-
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < m; j++)
+		for (int j = 0; j < C; j++)
 		{
 			cin >> board[i][j];
-			
+
 			if (board[i][j] == 'J')
 			{
-				visj[i][j] = 0;
-				Qj.push({ i, j });
+				JQ.push({ i, j });
+				j_vis[i][j] = 1;
 			}
 
 			if (board[i][j] == 'F')
 			{
-				visf[i][j] = 0;
-				Qf.push({ i, j });
+				FQ.push({ i, j });
+				f_vis[i][j] = 1;
 			}
 		}
 	}
 
-
-	while (!Qf.empty())
+	while (!FQ.empty()) // 불 BFS
 	{
-		auto cur = Qf.front(); Qf.pop();
+		auto cur = FQ.front(); FQ.pop();
 
 		for (int dir = 0; dir < 4; dir++)
 		{
-			int nx = cur.X + dx[dir];
-			int ny = cur.Y + dy[dir];
+			int nx = cur.first + dx[dir];
+			int ny = cur.second + dy[dir];
+			if (nx < 0 || nx >= R || ny < 0 || ny >= C) continue;
+			if (f_vis[nx][ny] >= 1 || board[nx][ny] == '#') continue;
 
-			if (nx < 0 || nx >= n || ny < 0 || ny >= m)continue;
-			if (visf[nx][ny] >= 0 || board[nx][ny] == '#') continue;
-
-			visf[nx][ny] = visf[cur.X][cur.Y] + 1;
-			Qf.push({ nx, ny });
+			f_vis[nx][ny] = f_vis[cur.first][cur.second] + 1;
+			FQ.push({ nx, ny });
 		}
-
 	}
-	//불 bfs가 잘 작동됨
-	//for (int i = 0; i < n; i++)
-	//{
-	//	for (int j = 0; j < m; j++)
-	//	{
-	//		cout << visf[i][j];
-	//	}
-	//	cout << endl;
-	//}
 
-	while (!Qj.empty())
+	while (!JQ.empty())
 	{
-		auto cur = Qj.front(); Qj.pop();
+		auto cur = JQ.front(); JQ.pop();
 
 		for (int dir = 0; dir < 4; dir++)
-		{
-			int nx = cur.X + dx[dir];
-			int ny = cur.Y + dy[dir];
+		{ 
+			int nx = cur.first + dx[dir];
+			int ny = cur.second + dy[dir];
 
-			if(nx < 0 || nx >= n || ny < 0 || ny >= m)
+			if (nx < 0 || nx >= R || ny < 0 || ny >= C)
 			{
-				cout << visj[cur.X][cur.Y] + 1;
+				cout << j_vis[cur.first][cur.second];
 				return 0;
 			}
-			if (board[nx][ny] == '#' || visj[nx][ny] >= 0) continue;
-			if (visf[nx][ny] != -1 && visf[nx][ny] <= visj[cur.X][cur.Y]+1)continue;
-			
-			visj[nx][ny] = visj[cur.X][cur.Y] + 1;
-			Qj.push({ nx, ny });
+			if (j_vis[nx][ny] >= 1 || board[nx][ny] == '#') continue;
+			if (f_vis[nx][ny] <= j_vis[cur.first][cur.second] + 1 && f_vis[nx][ny] != 0) continue;
+			j_vis[nx][ny] = j_vis[cur.first][cur.second] + 1;
+			JQ.push({ nx,ny });
 		}
-
-		
 	}
-	cout << "IMPOSSIBlE";
+
+	cout << "IMPOSSIBLE";
 }
