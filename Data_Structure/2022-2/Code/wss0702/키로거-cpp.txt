@@ -1,0 +1,38 @@
+#include <algorithm>
+#include <iostream>
+#include <iterator>
+#include <list>
+using namespace std;
+int main() {
+	int Testcase;
+	cin >> Testcase;
+	for (int j = 0; j < Testcase; j++) {
+		list<char> N;
+		auto cursor = N.begin();
+		string input = { 0 };
+		cin >> input;
+		for (int i = 0; ; i++) {
+			if (input[i] == 0) break;
+			if (input[i] == '<') {
+				if (cursor != N.begin()) cursor--;
+			}
+			else if (input[i] == '>') {
+				if (cursor != N.end()) cursor++;
+			}
+			else if (input[i] == '-') {
+				if (cursor != N.begin()) {
+					cursor--;
+					cursor = N.erase(cursor);
+				}
+			}
+			else {
+				N.insert(cursor, input[i]);
+			}
+		}
+		for(cursor = N.begin(); cursor != N.end(); cursor++){
+			cout << *cursor;
+		}
+        cout << "\n";
+	}
+
+}
