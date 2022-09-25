@@ -28,9 +28,6 @@ void ARR(deque<int>& dq) {
 	cin >> s;
 	int a = 0;
 	for (int i = 1; i < s.size() - 1; i++) {
-		/*if (48 <= s[i] && s[i] <= 57) {
-			dq.push_back(s[i] - '0');
-		}*/
 		if (s[i] == ',') {
 			dq.push_back(a);
 			a = 0;
