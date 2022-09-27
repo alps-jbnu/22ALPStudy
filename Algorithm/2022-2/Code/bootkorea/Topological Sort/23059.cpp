@@ -1,29 +1,29 @@
 #include <bits/stdc++.h>
+#include <unordered_map>
 #define pii pair<int, int>
 const int MAX = 400000 + 1;
 using namespace std;
 
 int N, idx = 0;
-int arr[MAX];
+int indegree[MAX];
 vector<int> vec[MAX], result[MAX];
-map<int, string> imap;
-map<string, int> smap;
+unordered_map<int, string> imap;
+unordered_map<string, int> smap;
 
-bool compare(int a, int b) { return imap[a] < imap[b]; }
+bool Compare(int a, int b) { return imap[a] < imap[b]; }
 
 void Solve()
 {
 	queue<pii> q;
 	for (int i = 0; i < idx; i++)
 	{
-		if (!arr[i])
+		if (!indegree[i])
 		{
 			q.push({ i, 0 });
-			vec[0].push_back(i);
+			result[0].push_back(i);
 		}
 	}
-
-	for (int i = 0; i < idx; i++)
+	while (idx--)
 	{
 		if (q.empty())
 		{
@@ -31,27 +31,27 @@ void Solve()
 			return;
 		}
 
-		int a = q.front().first, b = q.front().second;
+		int a = q.front().first, cnt = q.front().second;
 		q.pop();
 
 		for (int next : vec[a])
 		{
-			arr[next]--;
-			if (!arr[next])
+			indegree[next]--;
+			if (!indegree[next])
 			{
-				q.push({ next, b + 1 });
-				result[b + 1].push_back(next);
+				q.push({ next, cnt + 1 });
+				result[cnt + 1].push_back(next);
 			}
 		}
 	}
-	
+
 	for (int i = 0; ; i++)
 	{
 		if (!result[i].size()) return;
 
-		sort(result[i].begin(), result[i].end(), compare);
+		sort(result[i].begin(), result[i].end(), Compare);
 
-		for (int j = 0; j < result[i].size(); i++)
+		for (int j = 0; j < result[i].size(); j++)
 		{
 			cout << imap[result[i][j]] << "\n";
 		}
@@ -84,9 +84,9 @@ int main()
 
 		int x = smap[s1], y = smap[s2];
 		vec[x].push_back(y);
-		arr[y]++;
+		indegree[y]++;
 	}
-	
+
 	Solve();
 
 	return 0;
