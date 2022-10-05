@@ -1,0 +1,66 @@
+#include<iostream>
+#include<algorithm>
+#include<deque>
+#include<string>
+using namespace std;
+
+int main(void) {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	int T;
+	int n;
+	cin >> T;
+	while (T--) {
+		string p = { 0 };
+		string array = { 0 };
+		cin >> p >> n >> array;
+		int num = 0;
+		int rev = 0;
+		bool error = false;
+		deque <int> d;
+
+		for (int i = 1; i + 1 < array.size(); i++)
+		{
+			if (array[i] == ',' || array[i] == ']') {
+				d.push_back(num);
+				num = 0;
+			}
+			else {
+				num = 10 * num + (array[i] - '0');
+			}
+		}
+		if (num != 0)
+			d.push_back(num);
+
+
+		for (int j = 0; j < p.size(); j++) {
+			if (p[j] == 'R') {
+				rev = 1 - rev;
+			}
+			else {
+				if (d.empty()) {
+					error = true;
+					break;
+				}
+				if (!rev)
+					d.pop_front();
+				else
+					d.pop_back();
+			}
+		}
+		if (error) {
+			cout << "error" << "\n";
+		}
+		else {
+			if (rev) reverse(d.begin(), d.end());
+			cout << '[';
+			int sizenumber = d.size();
+			for (int j = 0; j < sizenumber; j++) {
+				if (j == sizenumber - 1) cout << d[j];
+				else cout << d[j] << ",";
+			}
+			cout << ']' << "\n";
+		}
+		
+	}
+}
