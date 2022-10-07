@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main(){
-	cout<<"hello\n";
+	string str;
+	int N;
 	return 0;
 }
