@@ -104,16 +104,21 @@ int main() {
 1-1. 모든 아이템을 구매할 수 없다면 -1 출력
 
 풀이 :
-1. 입력
-1-1. N 입력
-1-2. 아이템 그래프 입력받기 (단방향)
-2. 위상 정렬
-2-1. indegree == 0 인 단어 사전 순서대로 큐에 추가
-3. 출력
+1. string <-> int 변환 (양방향으로 변환이 가능해야 함)
+2. 그래프 만들기 -> 위상 정렬
+3. 사전 순 입력
 
 질문 :
 1. 사전 순서대로 출력하려면?
+-> 벡터에 넣고 벡터를 정렬함
+* vector<pair<int, string>> 을 이용하면 좋을 듯함. 정렬 시 int -> string 순으로 자동 정렬되기 떄문.
+
 2. 입력 값이 모두 string일 때, 그래프를 어떻게 구현해야 하나?
+->	unordered_map을 이용
+	unordered_map<int, string> intToString;
+	unordered_map<string, int> stringToInt;
+	stringToInt.insert({ s1, j });
+	intToString.insert({ j++, s1 });
 
 시간복잡도 :
 
