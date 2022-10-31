@@ -12,9 +12,11 @@ vector<int> graph[1001];	//int 타입의 단방향 그래프
 int indegree[1001];
 
 set<int> mustVisit;		//필수 방문 지점 저장 (set : 중복X, 자동 정렬)  *반드시 set이어야하는 건 아님.
+
 int visit[1001];		//해당 지점에서의 필수 방문 지점 방문 횟수
 int route[1001];		//DP : 각 지점별 경로 개수
 
+int mustVisit_arr[1001];	//필수 방문 지점 -1로 저장
 /*
 입력 :
 1. 교차로의 개수 N 도로의 개수 M
@@ -36,6 +38,7 @@ void input() {
 	for (int i = 0; i < K; i++) {
 		cin >> u;
 		mustVisit.insert(u);
+		mustVisit_arr[u] = -1;
 	}
 }
 
@@ -63,13 +66,18 @@ void Topology() {
 		// Cn 노드 방문
 		if (isInmustVisit(now)) visit[now]++;
 
+
 		for (int i = 0; i < graph[now].size(); i++) {
 			int next = graph[now][i];
 
+			//해당 노드(next)가 필수 
+			// ->	Σ(이전의 노드(now)의 경로 개수)
 			if (visit[next] == visit[now]) {
 				route[next] += route[now];
 			}
-			else if (visit[next] < visit[now]) {
+			//해당 노드가 필수 x
+			// ->	가장 마지막 필수 노드의 것 그대로 저장
+			else if (visit[next] < visit[now]) {	//처음에 visit[next]는 0일 테니깐...
 				visit[next] = visit[now];
 				route[next] = route[now];
 			}
@@ -116,7 +124,11 @@ int main() {
 1-1. 경로가 존재하지 않을 경우엔 0을 출력
 
 풀이 : 위상정렬 + DP (경로 개수)
-
-
+*?	*?	*10	*30	*60	*100
+*?	 ?	*10	*20	*30	*40
+*1	*4	*10	*10	*10	*10
+*1	*3	*6	 ?	 ?	*?
+*1	*2	*3	 ?	 ?	*?
+*1	*1	*1	*?	*?	*?
 
 */
