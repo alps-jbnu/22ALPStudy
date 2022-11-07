@@ -1,7 +1,6 @@
-#include <iostream>
-#include <algorithm>
-#define MAX 100 + 1
-#define INF 987654321
+#include <bits/stdc++.h>
+const int MAX = 100 + 1;
+const int INF = 1e9;
 using namespace std;
 
 int N, M, R, result = 0;
