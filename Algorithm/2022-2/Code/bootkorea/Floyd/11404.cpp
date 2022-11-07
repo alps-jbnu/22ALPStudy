@@ -1,62 +1,52 @@
 #include <bits/stdc++.h>
-const int MAX = 1000 + 1;
 const int INF = 1e9;
 using namespace std;
 
 int N, M;
-int arr[MAX][MAX];
-int path[MAX][MAX];
+int arr[101][101];
 
 int main()
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
+	cin >> N >> M;
 
-    cin >> N >> M;
-    for (int i = 1; i <= N; i++)
-    {
-        for (int j = 1; j <= M; j++)
-        {
-            if (i == j) arr[i][j] = 0;
-            else arr[i][j] = INF;
-        }
-    }
+	for (int i = 1; i <= N; i++) // 비용 설정
+	{
+		for (int j = 1; j <= N; j++)
+		{
+			arr[i][j] = INF;
+		}
+		arr[i][i] = 0; // 제자리 노코스트
+	}
 
-    for (int i = 0; i < M; i++)
-    {
-        int s, e, w;
-        cin >> s >> e >> w;
+	for (int i = 1; i <= M; i++)
+	{
+		int a, b, c;
+		cin >> a >> b >> c;
 
-        arr[s][e] = w;
-        arr[e][s] = w;
-        path[s][e] = e;
-        path[e][s] = s;
-    }
+		arr[a][b] = min(c, arr[a][b]);
+	}
 
-    for (int k = 1; k <= N; k++)
-    {
-        for (int i = 1; i <= N; i++)
-        {
-            for (int j = 1; j <= N; j++)
-            {
-                if (arr[i][j] > arr[i][k] + arr[k][j])
-                {
-                    arr[i][j] = arr[i][k] + arr[k][j];
-                    path[i][j] = path[i][k];
-                }
-            }
-        }
-    }
+	for (int k = 1; k <= N; k++)
+	{
+		for (int i = 1; i <= N; i++)
+		{
+			for (int j = 1; j <= N; j++)
+			{
+				arr[i][j] = min(arr[i][j], arr[i][k] + arr[k][j]);
+			}
+		}
+	}
 
-    for (int i = 1; i <= N; i++)
-    {
-        for (int j = 1; j <= N; j++)
-        {
-            if (!path[i][j]) cout << "- ";
-            else cout << path[i][j] << " ";
-        }
-        cout << "\n";
-    }
+	for (int i = 1; i <= N; i++)
+	{
+		for (int j = 1; j <= N; j++)
+		{
+			if (arr[i][j] == INF) arr[i][j] = 0;
 
-    return 0;
+			cout << arr[i][j] << " ";
+		}
+		cout << "\n";
+	}
+
+	return 0;
 }
