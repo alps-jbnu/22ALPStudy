@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm>
+#include<stack>
+using namespace std;
+stack <int> building;
+int main(void) {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	int N;
+	cin >> N;
+	int buildingheight;
+	long long sum = 0;
+	for (int i = 0; i < N; i++) {
+		cin >> buildingheight;
+		if (i == 0) {
+			building.push(buildingheight);
+			continue;
+		}
+		while (!building.empty() && buildingheight >= building.top()) {
+			building.pop();
+		}
+		sum += building.size();
+		building.push(buildingheight);
+	}
+	cout << sum;
+}
