@@ -1,0 +1,49 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int map[10000];
+char opreation[10000];
+char C[4] = { 'D','S','L','R' };
+int T;
+void bfs(int A, int B) {
+	queue<int> q;
+	q.push(A);
+	bool vis[10000] = { 0, };
+	while (!q.empty()) {
+		int cur = q.front();
+		q.pop();
+		if (cur == B) return;
+		int nxt[4] = {cur * 2 % 10000, cur - 1, cur % 1000 * 10 + cur / 1000, cur / 10 + cur % 10 * 1000};
+		if (nxt[1] < 0) nxt[1] = 9999;
+		for(int i = 0; i < 4; i++) {
+			if (vis[nxt[i]]) continue;
+			vis[nxt[i]] = true;
+			map[nxt[i]] = cur;
+			opreation[nxt[i]] = C[i];
+			q.push(nxt[i]);
+		}
+
+	}
+}
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> T;
+	int A, B;
+	for (int i = 0; i < T; i++) {
+		cin >> A >> B;
+		bfs(A, B);
+		vector<char> op;
+		while (map[B] != A) {
+			op.push_back(opreation[B]);
+			B = map[B];
+		}
+		op.push_back(opreation[B]);
+		reverse(op.begin(), op.end());
+		for (auto print : op) cout << print;
+		cout << endl;
+	}
+	return 0;
+}
