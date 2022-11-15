@@ -1,93 +1,78 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <queue>
-#include <cstring>
-#define MAX 1000 + 1
-#define INF 987654321
+#include <bits/stdc++.h>
+#define ll unsignelong long
+#define pii pair<int, int>
+#define pll pair<long long, long long>
+#define tiii tuple<int, int, int>
+const int MAX = 1000 + 1;
+const int INF = 1e9;
 using namespace std;
 
 int N, M, K;
-int S, D, result = 0;
+int S, D, result = INF, tax = 0;
 int arr[MAX][MAX];
-vector<pair<int, int>> vec[MAX];
-vector<pair<long long, long long>> Route;
+vector<pii> vec[MAX];
 
 void Dijkstra()
 {
-	for (int i = 1; i <= N; i++)
-	{
-		for (int j = 0; j <= 1000; j++)
-		{
+	for (int i = 0; i <= N; i++)
+		for (int j = 0; j <= MAX; j++)
 			arr[i][j] = INF;
-		}
-	}
 
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-	pq.push({ 1, 1 });
+	priority_queue<tiii, vector<tiii>, greater<tiii>> pq;
+	pq.push({ 0, S, 0 });
+	arr[S][0] = 0;
 
 	while (!pq.empty())
 	{
-		int cost = pq.top().first;
-		int dest = pq.top().second;
+		int cost, cur, len; tie(cost, cur, len) = pq.top();
 		pq.pop();
 
-		if (dist[dest] < cost) continue;
+		if (arr[cur][len] < cost || len >= N) continue;
 
-		for (int i = 0; i < vec[dest].size(); i++)
+		for (auto it : vec[cur])
 		{
-			int next = vec[dest][i].first;
-			int nextcost = cost + vec[dest][i].second;
+			int dest = it.first;
+			int temp = it.second;
 
-			if (dist[next] > nextcost)
+			if (arr[dest][len + 1] >= temp + cost)
 			{
-				dist[next] = nextcost;
-				arr[next] = dest;
-				pq.push({ nextcost, next });
+				arr[dest][len + 1] = temp + cost;
+				pq.push({ arr[dest][len + 1], dest, len + 1 });
 			}
 		}
 	}
-	cout << dist[destination] << "\n";
 }
 
 int main()
 {
+	ios::sync_with_stdio(0); cin.tie(0);
 	cin >> N >> M >> K;
 	cin >> S >> D;
-
-	long long Fisrt = INF, temp = 0, num;
-
-
+	S--; D--;
 	for (int i = 0; i < M; i++)
 	{
-		int a, b, w;
-		cin >> a >> b >> w;
-		vec[a].push_back({ b, w });
-		vec[b].push_back({ a, w });
+		int a, b, w; cin >> a >> b >> w;
+		vec[a - 1].push_back({ b - 1, w });
+		vec[b - 1].push_back({ a - 1, w });
 	}
+	Dijkstra();
 
-	Dijkstra(First);
-	cout << First << "\n";
-
-	for (long long i = 1; i <= N; i++)
+	for (int i = 1; i < N; i++)
 	{
-		if (arr[M][i] != INF)
-		{
-			Route.push_back({ arr[M][i], i });
-		}
+		result = min(result, arr[D][i]);
 	}
+	cout << result << "\n";
 
-	for (int i = 0; i < K; i++)
+	while (K--)
 	{
-		cin >> num;
-		temp += num;
+		result = INF;
+		int t; cin >> t; tax += t;
 
-		long long res = INF;
-
-		for (int i = 0; i < res; i++)
+		for (int j = 1; j < N; j++)
 		{
-			res = min(res, )
+			result = min(result, arr[D][j] + tax * j);
 		}
+		cout << result << "\n";
 	}
 
 	return 0;
