@@ -1,94 +1,172 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <queue>
-#include <cstring>
-#define MAX 1000 + 1
-#define INF 987654321
+#include <bits/stdc++.h>
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<long long, long long>
+#define tiii tuple<int, int, int>
+const int MAX = 1000 + 1;
+const int INF = 1e9;
 using namespace std;
 
+struct tup
+{
+	int idx, cnt, val;
+};
+struct comp
+{
+	bool operator()(tup& a, tup& b)
+	{
+		return a.val > b.val;
+	}
+};
+
 int N, M, K;
-int S, D, result = 0;
+int S, D, result = INF, tax = 0;
 int arr[MAX][MAX];
-vector<pair<int, int>> vec[MAX];
-vector<pair<long long, long long>> Route;
+vector<tup> vec[MAX];
 
 void Dijkstra()
 {
-	for (int i = 1; i <= N; i++)
-	{
-		for (int j = 0; j <= 1000; j++)
-		{
-			arr[i][j] = INF;
-		}
-	}
-
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-	pq.push({ 1, 1 });
+	priority_queue<tup, vector<tup>, comp> pq;
+	pq.push({ S, 0, 0 });
+	arr[S][0] = 0;
 
 	while (!pq.empty())
 	{
-		int cost = pq.top().first;
-		int dest = pq.top().second;
+		int cur, len, cost;
+		cur = pq.top().idx;
+		len = pq.top().cnt;
+		cost = pq.top().val;
 		pq.pop();
 
-		if (dist[dest] < cost) continue;
+		if (arr[cur][len] < cost) continue;
 
-		for (int i = 0; i < vec[dest].size(); i++)
+		for (auto it : vec[cur])
 		{
-			int next = vec[dest][i].first;
-			int nextcost = cost + vec[dest][i].second;
+			int dest = it.idx;
+			int temp = it.val;
 
-			if (dist[next] > nextcost)
+			if (arr[dest][len + 1] > temp + cost)
 			{
-				dist[next] = nextcost;
-				arr[next] = dest;
-				pq.push({ nextcost, next });
+				arr[dest][len + 1] = temp + cost;
+				pq.push({ dest, len + 1, temp + cost });
 			}
 		}
 	}
-	cout << dist[destination] << "\n";
+}
+
+void Solve()
+{
+	result = INF;
+	for (int i = 1; i < N; i++)
+	{
+		result = min(result, arr[D][i] + tax * i);
+	}
+	cout << result << "\n";
 }
 
 int main()
 {
+	ios::sync_with_stdio(0); cin.tie(0);
 	cin >> N >> M >> K;
 	cin >> S >> D;
 
-	long long Fisrt = INF, temp = 0, num;
-
+	for (int i = 1; i <= N; i++)
+		for (int j = 0; j < N; j++)
+			arr[i][j] = INF;
 
 	for (int i = 0; i < M; i++)
 	{
-		int a, b, w;
-		cin >> a >> b >> w;
-		vec[a].push_back({ b, w });
-		vec[b].push_back({ a, w });
+		int a, b, w; cin >> a >> b >> w;
+		vec[a].push_back({ b, 0, w });
+		vec[b].push_back({ a, 0, w });
 	}
 
-	Dijkstra(First);
-	cout << First << "\n";
+	Dijkstra();
+	Solve();
 
-	for (long long i = 1; i <= N; i++)
+	while (K--)
 	{
-		if (arr[M][i] != INF)
-		{
-			Route.push_back({ arr[M][i], i });
-		}
+		int t; cin >> t; tax += t;
+		Solve();
 	}
-
-	for (int i = 0; i < K; i++)
-	{
-		cin >> num;
-		temp += num;
-
-		long long res = INF;
-
-		for (int i = 0; i < res; i++)
-		{
-			res = min(res, )
-		}
-	}
-
 	return 0;
 }
+
+//#include <bits/stdc++.h>
+//#define ll long long
+//#define pii pair<int, int>
+//#define pll pair<long long, long long>
+//#define tiii tuple<int, int, int>
+//const int MAX = 1000 + 1;
+//const int INF = 1e9;
+//using namespace std;
+//
+//int N, M, K;
+//int S, D, result = INF, tax = 0;
+//int arr[MAX][MAX];
+//vector<pii> vec[MAX];
+//
+//void Dijkstra()
+//{
+//	priority_queue<tiii, vector<tiii>, greater<tiii>> pq;
+//	pq.push({ S, 0, 0 });
+//	arr[S][0] = 0;
+//
+//	while (!pq.empty())
+//	{
+//		int cur, len, cost; tie(cur, len, cost) = pq.top();
+//		pq.pop();
+//
+//		if (arr[cur][len] < cost) continue;
+//
+//		for (auto it : vec[cur])
+//		{
+//			int dest = it.first;
+//			int temp = it.second;
+//
+//			if (arr[dest][len + 1] > temp + cost)
+//			{
+//				arr[dest][len + 1] = temp + cost;
+//				pq.push({ dest, len + 1, temp + cost });
+//			}
+//		}
+//	}
+//}
+//
+//void Solve()
+//{
+//	result = INF;
+//	for (int i = 1; i < N; i++)
+//	{
+//		result = min(result, arr[D][i] + tax * i);
+//	}
+//	cout << result << "\n";
+//}
+//
+//int main()
+//{
+//	ios::sync_with_stdio(0); cin.tie(0);
+//	cin >> N >> M >> K;
+//	cin >> S >> D;
+//
+//	for (int i = 1; i <= N; i++)
+//		for (int j = 0; j < N; j++)
+//			arr[i][j] = INF;
+//
+//	for (int i = 0; i < M; i++)
+//	{
+//		int a, b, w; cin >> a >> b >> w;
+//		vec[a].push_back({ b, w });
+//		vec[b].push_back({ a, w });
+//	}
+//
+//	Dijkstra();
+//	Solve();
+//
+//	while (K--)
+//	{
+//		int t; cin >> t; tax += t;
+//		Solve();
+//	}
+//	return 0;
+//}
