@@ -1,0 +1,79 @@
+#include <iostream>
+#include <deque>
+#include <string>
+#include <algorithm>
+using namespace std;
+int main(void) {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+
+	int T;
+	string p, num;
+	int n, x, key = 0, z;
+	deque<int> dq, dq2;
+
+	cin >> T;
+	for (int i = 0; i < T; i++) {
+		z = 0;
+		cin >> p;
+		cin >> n;
+		cin >> num;
+
+		string temp;
+		for (int j = 0; j < num.size(); j++) {
+			if (isdigit(num[j])) {		// isdigit : 숫자인지 판별 
+				temp += num[j];
+			}
+			else {
+				//수가 존재할 때
+				if (temp != "") {
+					dq.push_back(stoi(temp));	// stoi : string to int, 정수형으로 
+					temp = "";
+				}
+			}
+		}
+
+		for (int j = 0; j < p.size(); j++) {
+			if (p[j] == 'R') {	// 실제로 뒤집지 않고 z만 변경
+				if (z) z = 0;
+				else z = 1;
+			}
+			else if (p[j] == 'D') {
+				if (dq.empty()) {
+					cout << "error\n";
+					key = 1;
+					break;
+				}
+				else {
+					if (z == 0) dq.pop_front();	// 뒤집기가 짝수번 실행됐으면 pop_front
+					else if (z == 1) dq.pop_back();	// 뒤집기가 홀수번 실행됐으면 pop_back
+					n--;
+				}
+			}
+		}
+
+		if (z == 1) {	// z == 1이면 한번 뒤집어줌
+			for (int k = 0; k < n; k++) {
+				dq2.push_back(dq.back());
+				dq.pop_back();
+			}
+			dq = dq2;
+			dq2.clear();
+		}
+
+		if (key) key = 0;
+		else {
+			cout << '[';
+			for (int j = 0; j < dq.size(); j++) {
+				cout << dq[j];
+				if (j != dq.size() - 1) cout << ',';
+			}
+			cout << ']';
+			cout << '\n';
+		}
+		dq.clear();
+	}
+
+
+	return 0;
+}
