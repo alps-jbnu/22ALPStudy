@@ -1,0 +1,108 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int N;
+int dx[4] = { -1, 1, 0, 0 };
+int dy[4] = { 0, 0, -1, 1 };
+int map[22][22];
+int vis[22][22];
+int baby = 2;
+int print = 0;
+int eatfish = 0;
+int i, j;
+
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> N;
+	for (int x = 0; x < N; x++) {
+		for (int y = 0; y < N; y++) {
+			cin >> map[x][y];
+			if (map[x][y] == 9) {
+				i = x;
+				j = y;
+			}
+		}
+	}
+	while (1) {
+		for (int x = 0; x <= N; x++)
+			for (int y = 0; y <= N; y++)
+				vis[x][y] = -1;
+		
+		vis[i][j] = 0;
+		map[i][j] = 0;
+		queue<pair<int, int>> q;
+		vector<pair<int, int>> fish;
+		if (eatfish >= baby) {
+			eatfish -= baby;
+			baby++;
+		}
+		q.push({ i,j });
+		while (!q.empty()) {
+			auto cur = q.front();
+			q.pop();
+			for (int i = 0; i < 4; i++) {
+				int nx = cur.first + dx[i];
+				int ny = cur.second + dy[i];
+				if (nx < 0 || nx >= N || ny < 0 || ny >= N)continue;
+				if (vis[nx][ny] != -1) continue;
+				if (map[nx][ny] > baby) continue;
+				else if (map[nx][ny] == baby || map[nx][ny] == 0) {
+					vis[nx][ny] = vis[cur.first][cur.second] + 1;
+					q.push({ nx,ny });
+				}
+				else if (map[nx][ny] < baby && map[nx][ny] >= 1) {
+					vis[nx][ny] = vis[cur.first][cur.second] + 1;
+					fish.push_back({ nx,ny });
+					q.push({ nx,ny });
+				}
+			}
+
+		}
+
+		if (fish.size() == 0) {
+			cout << print;
+			return 0;
+		}
+		else if (fish.size() == 1) {
+			i = fish[0].first;
+			j = fish[0].second;
+			map[i][j] = 0;
+			eatfish++;
+			print += vis[i][j];
+		}
+		else {
+			int mindist = 1e5;
+			for (auto& x : fish) {
+				mindist = min(mindist, vis[x.first][x.second]);
+			}
+			int mincnt = 0;
+			vector<pair<int, int>> minfish;
+			for (auto& x : fish) {
+				if (mindist == vis[x.first][x.second]) {
+					minfish.push_back({ x.first,x.second });
+				}
+			}
+			if (minfish.size() == 1) {
+				i = minfish[0].first;
+				j = minfish[0].second;
+				map[i][j] = 0;
+				print += vis[i][j];
+				eatfish++;
+			}
+			else {
+				sort(minfish.begin(), minfish.end());
+				i = minfish[0].first;
+				j = minfish[0].second;
+				print += vis[i][j];
+				map[i][j] = 0;
+				eatfish++;
+			}
+		}
+	}
+}
+
+

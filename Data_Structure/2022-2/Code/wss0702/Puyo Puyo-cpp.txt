@@ -1,0 +1,92 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int N;
+int print;
+int dx[4] = { -1, 1, 0, 0 };
+int dy[4] = { 0, 0, -1, 1 };
+char map[12][6];
+char newmap[12][6];
+bool vis[12][6];
+bool bfs(int x, int y) {
+	for (int i = 0; i < 12; i++) {
+		for (int j = 0; j < 6; j++) {
+			vis[i][j] = false;
+		}
+	}
+	queue<pair<int, int>> q;
+	queue<pair<int, int>> opreation; //4개가 모여야 터짐
+	q.push({ x,y });
+	opreation.push({ x, y });
+	vis[x][y] = true;
+	while (!q.empty()) {
+		auto cur = q.front();
+		q.pop();
+		for (int nxt = 0; nxt < 4; nxt++) {
+			int nx = cur.first + dx[nxt];
+			int ny = cur.second + dy[nxt];
+			if (nx < 0 || nx >= 12 || ny < 0 || ny >= 6) continue;
+			if (vis[nx][ny]) continue;
+			if (map[nx][ny] == map[x][y]){
+				q.push({ nx,ny });
+				opreation.push({ nx,ny });
+				vis[nx][ny] = true;
+			}
+		}
+	}
+	if (opreation.size() >= 4) {
+		while(!opreation.empty()) {
+			auto cur = opreation.front();
+			opreation.pop();
+			map[cur.first][cur.second] = '.';
+		}
+		return true;
+	}
+	return false;
+}
+void pushdown() {
+	for (int j = 0; j < 6; j++) {
+		queue<char> q;
+		for (int i = 11; i >= 0; i--) 
+			if (map[i][j] != '.')
+				q.push(map[i][j]);
+			int qsize = q.size();
+			for (int i = 11; i >= 12 - qsize; i--) {
+				map[i][j] = q.front();
+				q.pop();
+			}
+			for (int i = 11 - qsize; i >= 0; i--) {
+				map[i][j] = '.';
+			}
+		
+	}
+}
+
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	for (int i = 0; i < 12; i++) {
+		for (int j = 0; j < 6; j++) {
+			cin >> map[i][j];
+		}
+	}
+	while (1) {
+		bool check = 0;
+		for (int i = 0; i < 12; i++) {
+			for (int j = 0; j < 6; j++) {
+				if (map[i][j] != '.') {
+					if (bfs(i, j)) check = 1;
+				}
+			}
+		}
+		if (!check) break;
+		print++;
+		pushdown();
+	}
+
+	cout << print;
+	return 0;
+}

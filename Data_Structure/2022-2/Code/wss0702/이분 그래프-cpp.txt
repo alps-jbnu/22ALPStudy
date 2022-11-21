@@ -1,0 +1,74 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+#include<stack>
+#include<algorithm>
+using namespace std;
+vector<int> adj[20000];
+bool vis[20000];
+int dist[20000];
+int K, V, E;
+void bfs(int st) {
+	queue<int> q;
+	q.push(st);
+	int color = 1;
+	dist[st] = color;
+	while (!q.empty()) {
+		int cur = q.front();
+		q.pop();
+		if (dist[cur] == 1) {
+			color = 2;
+		}
+		else if (dist[cur] == 2) {
+			color = 1;
+		}
+		
+		for (auto next : adj[cur]) {
+	
+			if (!dist[next]) {
+				dist[next] = color;
+				q.push(next);
+			}
+		}
+
+	}
+}
+bool isBipartiteGraph() {
+	for (int i = 1; i <= V; i++) {
+		for (int next: adj[i]) {
+			if (dist[i] == dist[next]) return 0;
+		}
+	}
+	return 1;
+}
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cin >> K;
+	for (int i = 0; i < K; i++) {
+		cin >> V >> E;
+		for (int j = 0; j < E; j++) {
+			int u, v;
+			cin >> u >> v;
+			adj[u].push_back(v);
+			adj[v].push_back(u);
+		}
+		for (int i = 1; i <= V; i++) {
+			if (!dist[i]) {
+				bfs(i);
+			}
+		}
+		if (isBipartiteGraph()) {
+			cout << "YES" << "\n";
+		}
+		else {
+			cout << "NO" << "\n";
+		}
+		for (int i = 1; i <= V; i++) {
+			adj[i].clear();
+		}
+		fill(dist, dist + V + 2, 0);
+	}
+
+
+}
