@@ -78,8 +78,7 @@
 |  10/01 ~ 10/07  |[최소 신장 트리](https://blog.encrypted.gg/1024?category=773649), [Union-Find](https://blog.naver.com/ndb796/221230967614)|
 |  10/08 ~ 10/14  |[플로이드-와샬](https://blog.encrypted.gg/1035?category=773649)|
 |  11/04 ~ 11/11  |[다익스트라](https://blog.encrypted.gg/1037?category=773649)|
-|  11/12 ~ 11/25  |[KMP](https://blog.encrypted.gg/1040?category=773649)|
-|  11/26 ~ 12/09  |[Trie](https://blog.encrypted.gg/1059?category=773649)|
+|  11/12 ~ 12/02  |[Segment Tree](https://blog.naver.com/ndb796/221282210534)|
 
 # 문제집
 
@@ -96,5 +95,4 @@
 |  08  |         [최소 신장 트리](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1B.md)          |
 |  09  |         [플로이드](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1C.md)          |
 |  10  |         [다익스트라](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1D.md)          |
-|  11  |         [KMP](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1E.md)          |
-|  12  |         [Trie](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x1F.md)          |
+|  11  |         [Segment Tree](https://www.acmicpc.net/workbook/view/11778)          |
